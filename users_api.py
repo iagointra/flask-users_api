@@ -22,7 +22,7 @@ class UserModel(db.Model):
 user_args = reqparse.RequestParser()
 user_args.add_argument('user_login', type=str, required=True, help="User login cannot be blank")
 user_args.add_argument('user_name', type=str, required=True, help="User name cannot be blank")
-user_args.add_argument('user_status', type=bool, required=True, help="User name cannot be blank")
+user_args.add_argument('user_status', type=bool, required=True, help="User status cannot be blank")
 
 userFields = {
     "user_id":fields.Integer,
